@@ -1,0 +1,40 @@
+.react-fancy-table {
+	.react-fancy-table-spacer {
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: auto;
+	}
+
+	.react-fancy-table-header {
+		display: flex;
+		align-items: center;
+	}
+
+	.react-fancy-table-columns {
+		display: flex;
+		align-items: center;
+
+		.react-fancy-table-column {
+			cursor: pointer;
+			user-select: none;
+			box-shadow: inset 0 -2px transparent, inset 0 2px transparent;
+
+			&.react-fancy-table-column-sort-asc {
+				box-shadow: inset 0 -2px #ff0000;
+			}
+			&.react-fancy-table-column-sort-desc {
+				box-shadow: inset 0 2px #ff0000;
+			}
+		}
+	}
+	.react-fancy-table-rows {
+		.react-fancy-table-row {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.react-fancy-table-column {
+		flex: 1;
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"name": "react-fancy-table",
+	"version": "1.0.0",
+	"description": "",
+	"keywords": [
+		"react",
+		"table",
+		"bootstrap"
+	],
+	"author": "mauriziocarella",
+	"license": "MIT",
+	"repository": "mauriziocarella/react-date-pickers",
+	"main": "dist/index.js",
+	"module": "dist/index.es.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"scripts": {
+		"build": "rollup -c && yarn run build:themes",
+		"build:themes": "postcss src/themes/* --dir dist/themes --ext css",
+		"build:watch": "concurrently \"rollup -c -w\" \"yarn run build:themes:watch\"",
+		"build:themes:watch": "postcss src/themes/* --dir dist/themes --ext css -w"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.170",
+		"@types/react": "^17.0.6",
+		"@types/react-dom": "^17.0.5",
+		"autoprefixer": "^9.8.6",
+		"classnames": "^2.3.1",
+		"concurrently": "^6.1.0",
+		"lodash": "^4.17.21",
+		"node-sass": "^6.0.0",
+		"postcss": "^8.3.0",
+		"postcss-cli": "^8.3.1",
+		"precss": "^4.0.0",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-scripts": "^4.0.3",
+		"rollup": "^2.49.0",
+		"rollup-plugin-postcss": "^4.0.0",
+		"rollup-plugin-typescript2": "^0.30.0",
+		"sass": "^1.34.0",
+		"typescript": "^4.2.4"
+	},
+	"peerDependencies": {
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0"
+	}
+}

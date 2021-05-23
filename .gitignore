@@ -1,0 +1,12 @@
+# Output dir
+/dist
+
+# Node modules
+/node_modules
+/example/node_modules
+
+# IDE settings
+/.idea
+
+# Logs
+/**/*.log
